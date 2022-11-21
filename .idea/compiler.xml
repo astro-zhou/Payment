@@ -7,10 +7,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="cloud-consumer-order80" />
         <module name="cloud-provider-payment8001" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="cloud-consumer-order80" target="8" />
       <module name="cloud-provider-payment8001" target="1.8" />
       <module name="cloud2020" target="1.8" />
     </bytecodeTargetLevel>
