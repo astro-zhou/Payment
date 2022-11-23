@@ -9,18 +9,17 @@ import java.util.UUID;
 
 /**
  * @author zyh
- * @create 2022-11-22 20:19
+ * @create 2022-11-23 19:55
  */
 @RestController
 @Slf4j
-public class PaymentController
-{
+public class PaymentController {
+
     @Value("${server.port}")
     private String serverPort;
 
     @RequestMapping(value = "/payment/consul")
-    public String paymentConsul()
-    {
-        return "springcloud with consul: "+serverPort+"\t"+ UUID.randomUUID().toString();
+    public String paymentzk() {
+        return "springcloud with consul: " + serverPort + "\t" + UUID.randomUUID().toString();
     }
 }
